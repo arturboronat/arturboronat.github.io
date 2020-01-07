@@ -7,7 +7,11 @@ This is a resume template built with [Jekyll](https://jekyllrb.com/) that is rea
 * Original: https://github.com/toddstoffer/jekyll-academic-resume
 * [Jekyll ORCID](https://github.com/mfenner/jekyll-orcid)
 
+## Publishing page
 
+To test web site: `bundle exec jekyll serve`, then access [http://0.0.0.0:4000/](http://0.0.0.0:4000/)
+
+To publish web site; `../publish.sh "COMMIT MESSAGE"`
 
 
 
