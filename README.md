@@ -1,6 +1,8 @@
 # Artur home page and portfolio
 
-This is a resume template built with [Jekyll](https://jekyllrb.com/) that is ready for use with [GitHub Pages](https://pages.github.com/). There are sections for employment history, education, publications and presentations. It also includes [Reveal.js](https://revealjs.com/#/) allowing you to create and host presentations directly from your GitHub Pages User page.
+Web page + portfolio:
+
+<img src="./summary.jpeg"/>
 
 ## Configuration
 
@@ -35,6 +37,11 @@ To customize the way publications are rendered:
 
 * Use [boostrap 3.3.7](https://getbootstrap.com/docs/3.3/components/)
 * [Shopify Liquid](https://shopify.github.io/liquid/) is the templating language using in html documents, which fetch data from the YAML files
+
+## Pending
+
+* enable navigation from research themes to related articles and to go to main research theme from article
+  
 
 ## Other
 
