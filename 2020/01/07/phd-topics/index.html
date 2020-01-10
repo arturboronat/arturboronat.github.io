@@ -116,44 +116,109 @@
         
         </header>
 
-    <h1>YAMTL: expressive and efficient model transformation</h1>
-<p>06 Jan 2020 - Artur Boronat - 
-<a  href="http://twitter.com/share?text=YAMTL: expressive and efficient model transformation @arturboronat&url=http://0.0.0.0:4000/2020/01/06/yamtl/"
+    <h1>PhD Topics 2020</h1>
+<p>07 Jan 2020 - Artur Boronat - 
+<a  href="http://twitter.com/share?text=PhD Topics 2020 @arturboronat&url=http://0.0.0.0:4000/2020/01/07/phd-topics/"
     onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
     title="Share on Twitter" >
     <i class="fab fa-twitter share-button"></i>
 </a>
-<a  href="mailto:?subject=YAMTL: expressive and efficient model transformation&amp;body=Check out this post http://0.0.0.0:4000/2020/01/06/yamtl/ via https://arturboronat.info"
+<a  href="mailto:?subject=PhD Topics 2020&amp;body=Check out this post http://0.0.0.0:4000/2020/01/07/phd-topics/ via https://arturboronat.info"
     title="Share via Email" >
     <i class="fa fa-envelope share-button"></i>
 </a>
 </p>
 
-<p>YAMTL is an EMF-based model-to-model transformation engine whose transformations are defined with an internal DSL of Xtend. <br /></p>
+<p>If you are interested in doing a PhD in the intersection between model-driven engineering and microservices/cloud technology, <a href="mailto:artur.boronat@le.ac.uk">contact me</a>.</p>
 
-<p>Some of its advantages are:</p>
-
-<p>👍 as <strong>expressive</strong> as state-of-the-art model transformation languages, such as ATL<br />
-👍 powerful model <strong>pattern matching</strong><br />
-👍 <strong>reuse</strong> via inheritance and module composition<br />
-👍 compiled to Java: <strong>one of the fastest transformation engines</strong><br /> 
-👍 full <strong>interoperability</strong> from/to Java<br />
-👍 <strong>incremental execution</strong><br />
-👍 <strong>Xtend tool ecosystem</strong>: templates, IDE, debugger</p>
-
-<p>Check the slides used at MODELS’18:</p>
-
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/LE3TmF9p7bs5p7" width="595" height="335" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen=""> </iframe>
-<div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/aboronat/expressive-and-efficient-model-transformation-with-an-internal-dsl-of-xtend" title="Expressive and Efficient Model Transformation with an Internal DSL of Xtend" target="_blank">Expressive and Efficient Model Transformation with an Internal DSL of Xtend</a> </strong> from <strong><a href="https://www.slideshare.net/aboronat" target="_blank">Artur Boronat</a></strong> </div>
+<p>Currently proposed topics are:</p>
+<ul>
+  <li>Automated management of domain-driven design in microservice architectures</li>
+  <li>Domain-specific incremental syncing policies</li>
+</ul>
 
 <!--more-->
 
-<p>The semantics of the language can be found at 
-<a class="citation" href="#yamtl">(Boronat, 2018)</a>.</p>
+<h2 id="automated-management-of-domain-driven-design-in-microservice-architectures">Automated Management of Domain-Driven Design in Microservice Architectures</h2>
+
+<p><img align="left" width="200px" style="margin-right:20px;" src="/assets/images/articles/microservices.png" /></p>
+
+<p>Domain-Driven Design (DDD) treats domain models as the most important asset to guide software development of micro-services, yet those models are still implicitly represented in programs. Model-Driven Engineering (MDE) regards those models as representable entities that are amenable to automated analysis and processing, facilitating quality assurance while increasing productivity in software development processes. Although this connection is not new, very few approaches facilitate adoption of MDE tooling without compromising existing value, their data. Moreover, switching to MDE tooling usually involves re-engineering core parts of an application, hindering backward compatibility and, thereby, continuous integration, while requiring an up-front investment in training in specialized modeling frameworks. In those approaches that overcome the previous problem, there is no clear indication  from a quantitative point of view  of the extent to which adopting state-of-the-art MDE practices and tooling is feasible or advantageous.</p>
+
+<p>In <a class="citation" href="#BoronatASE19">(Boronat, 2019)</a>, we advocated a code-first approach to modeling through an approach for applying MDE techniques and tools to existing object-oriented software applications that fully preserves the semantics of the original application, which need not be modified. Our approach consists both of a semi-automated method for specifying explicit view models out of existing object-oriented applications and of a conservative extension mechanism that enables the use of such view models at run time, where view model queries are resolved on demand and view model updates are propagated incrementally to the original application. This mechanism enables an iterative, flexible application of MDE tooling to software applications, where metamodels and models do not exist explicitly. An evaluation of this extension mechanism, implemented for Java applications and for view models atop the Eclipse Modeling Framework (EMF), has been conducted with an industry-targeted benchmark for decision support systems, analyzing performance and scalability of the synchronization mechanism. Backward propagation of large updates over very large views is instant.</p>
+
+<p>Your research on this topic will focus on the use of model-driven engineering technology for systematically managing domain models in microservices with the aim of improving the agile software developer experience.</p>
+
+<h2 id="incremental-syncing-policies-in-data-driven-cloud-software-applications">Incremental Syncing Policies in Data-driven Cloud Software Applications</h2>
+
+<p><img align="left" width="200px" style="margin-right:20px;" src="/assets/images/articles/cloud-syncing.png" /></p>
+
+<p>Replication is a widely used technique to increase resilience and availability in cloud systems. This comes at the expense of dealing automated mechanisms for keeping replicas <em>in sync</em>.</p>
+
+<p>YAMTL <a class="citation" href="#yamtl">(Boronat, 2018)</a> is an efficient data syncing language that can be used from JVM programs and that offers facilities for defining domain-specific synchronization policies. Such synchronization policies can be executed incrementally <a class="citation" href="#BoronatFASE19">(Boronat, 2019)</a>, minimizing the payload that needs to be transmitted over the network.</p>
+
+<p>Your research on this topic will focus on mechanisms for capturing domain-specific synchronization policies in data-driven cloud software systems and for implementing them in microservice and serverless applications.</p>
+
+<h2 id="helping-patients-with-chronic-conditions-using-ai">Helping Patients with Chronic Conditions using AI</h2>
 
 <h2 id="references">References</h2>
 
-<ol class="bibliography"><li><span id="yamtl">Boronat, A. (2018). Expressive and Efficient Model Transformation with an Internal DSL of Xtend. In <i>Proceedings of the 21th ACM/IEEE International Conference on MoDELS</i> (pp. 78–88). ACM.</span>
+<ol class="bibliography"><li><span id="BoronatFASE19">Boronat, A. (2019). Offline Delta-Driven Model Transformation with Dependency Injection. In <i>FASE 2019</i> (Vol. 11424, pp. 134–150). Springer.</span>
+
+<div id="BoronatFASE19-materials">
+  <ul class="nav nav-pills">
+    
+
+    <li><a class="btn" data-toggle="collapse" href="#BoronatFASE19-bibtex">BibTeX <label class="glyphicon glyphicon-collapse-down" /></a></li>
+
+    
+
+    
+  </ul>
+
+  
+
+  <pre id="BoronatFASE19-bibtex" class="pre pre-scrollable collapse">@inproceedings{BoronatFASE19,
+  author = {Boronat, Artur},
+  title = {Offline Delta-Driven Model Transformation with Dependency Injection},
+  booktitle = {{FASE} 2019},
+  pages = {134--150},
+  year = {2019},
+  series = {LNCS},
+  volume = {11424},
+  publisher = {Springer}
+}
+</pre>
+
+</div>
+</li>
+<li><span id="BoronatASE19">Boronat, A. (2019). Code-First Model-Driven Engineering: On the Agile Adoption of MDE Tooling. In <i>Proceedings of the 34th IEEE/ACM International Conference on Automated Software Engineering (ASE 2019), San Diego, CA, November 11-15</i>. ACM.</span>
+
+<div id="BoronatASE19-materials">
+  <ul class="nav nav-pills">
+    
+
+    <li><a class="btn" data-toggle="collapse" href="#BoronatASE19-bibtex">BibTeX <label class="glyphicon glyphicon-collapse-down" /></a></li>
+
+    
+
+    
+  </ul>
+
+  
+
+  <pre id="BoronatASE19-bibtex" class="pre pre-scrollable collapse">@inproceedings{BoronatASE19,
+  author = {Boronat, Artur},
+  title = {Code-First Model-Driven Engineering: On the Agile Adoption of MDE Tooling},
+  booktitle = {Proceedings of the 34th IEEE/ACM International Conference on Automated Software Engineering (ASE 2019), San Diego, CA, November 11-15},
+  year = {2019},
+  publisher = {{ACM}}
+}
+</pre>
+
+</div>
+</li>
+<li><span id="yamtl">Boronat, A. (2018). Expressive and Efficient Model Transformation with an Internal DSL of Xtend. In <i>Proceedings of the 21th ACM/IEEE International Conference on MoDELS</i> (pp. 78–88). ACM.</span>
 
 <div id="yamtl-materials">
   <ul class="nav nav-pills">
