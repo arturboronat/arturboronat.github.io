@@ -116,93 +116,114 @@
         
         </header>
 
-    <section class="section posts-section">
-    <h2 class="section-title">
-      <span class="fa-stack fa-xs">
-        <i class="fas fa-newspaper fa-stack-2x"></i>
-      </span>
-      <a href="/posts">Articles and News <label class="glyphicon glyphicon-new-window"/></a>
-    </h2>
-    
-    <div class="container-fluid box">
-<!--
-      <img class="center" src="/assets/images/under-construction.gif"/>
-  -->    
-      
-    
-      <h4 class="box-title">
-        <a href=/yamtl-augmenting-java/>Yamtl Augmenting Java <label class="glyphicon glyphicon-new-window"/></a>
-      </h4>
-      <div class="box-text">
-        <h2 id="yamtl-augmenting-java-programs-with-model-transformation">YAMTL: Augmenting Java Programs with Model Transformation</h2>
+    <h1>Yamtl Augmenting Java</h1>
+<p>15 Jan 2020 -  - 
+<a  href="http://twitter.com/share?text=Yamtl Augmenting Java @arturboronat&url=http://0.0.0.0:4000/yamtl-augmenting-java/"
+    onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+    title="Share on Twitter" >
+    <i class="fab fa-twitter share-button"></i>
+</a>
+<a  href="mailto:?subject=Yamtl Augmenting Java&amp;body=Check out this post http://0.0.0.0:4000/yamtl-augmenting-java/ via https://arturboronat.info"
+    title="Share via Email" >
+    <i class="fa fa-envelope share-button"></i>
+</a>
+</p>
 
+<h2 id="yamtl-augmenting-java-programs-with-model-transformation">YAMTL: Augmenting Java Programs with Model Transformation</h2>
 
-      </div>
-    </div>
-    
-    <div class="container-fluid box">
-<!--
-      <img class="center" src="/assets/images/under-construction.gif"/>
-  -->    
-      
-        <a href=/phd-topics/><img class="box-image" width="150" height="125" align="left" src="/assets/images/articles/do-a-phd.png" alt="post picture" /></a>
-      
-    
-      <h4 class="box-title">
-        <a href=/phd-topics/>PhD Topics 2020 <label class="glyphicon glyphicon-new-window"/></a>
-      </h4>
-      <div class="box-text">
-        <p>Apply for a <strong>funded GTA position</strong>, starting in September 2020, 👉<a href="https://www2.le.ac.uk/departments/informatics/news/vacancies/gtas-sep2020">here</a>👈.</p>
+<p><img src="articles/yamtl-java.png" /></p>
 
-<p><strong>Deadline: 6 February 2020.</strong></p>
+<p>Model transformation is traditionally used to translate models between different modeling languages and it can also be used to manipulate data that is modeled using an object-oriented notation, such as UML. This defining characteristic makes it an ideal candidate for developing <a href="https://modeling-languages.com/big-five-bet-modeling-low-code/">low-code application platforms</a> by, for example, automating both translation tasks and <a href="https://modeling-languages.com/category/topic/reverse/">reverse engineering tasks</a>.</p>
 
-<p>Currently proposed topics are:</p>
+<p><a href="https://arturboronat.info/yamtl">YAMTL</a> is a model transformation (MT) language that is defined as an internal domain-specific language of <a href="https://www.eclipse.org/xtend/">Xtend</a> and, thereby, reuses advanced IDE support and out-of-the-box interoperability with Java, including Android. Its transformation engine is one of the fastest thanks to working with compiled transformations.</p>
+
+<p><strong>YAMTL is a model transformation language fully interoperable with Java, expressive and very fast - arturboronat.info/yamtl</strong></p>
+
+<p>YAMTL comes equipped with <strong>advanced model transformation features</strong> that can help in implementing any kind of model transformation: as expressive as state-of-the-art model transformation languages, such as ATL; powerful model pattern matching with local-search programmable plans; reuse via multiple rule inheritance and module composition; compiled to Java;
+full interoperability from/to Java; additional facilities inherited from Xtend (templates for code generation, IDE, debugger, and Java extensions).</p>
+
+<p>The following <a href="https://www.slideshare.net/aboronat/expressive-and-efficient-model-transformation-with-an-internal-dsl-of-xtend">slides (used at MODELS’18)</a> contain an example that shows some similarities between YAMTL and ATL:</p>
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/LE3TmF9p7bs5p7" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen=""> </iframe>
+
+<p>In a recent survey on <a href="https://modeling-languages.com/future-model-transformation-languages/">the future of MT languages</a>, respondents enumerated a number of reasons for not using MT languages. In the table below, we indicate how YAMTL tackles some of those challenges:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Reason for not using MT</th>
+      <th>YAMTL solution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Complex setup and IDE-specific dependencies</td>
+      <td>Use mature Xtend IDE/Java ecosystem</td>
+    </tr>
+    <tr>
+      <td>No real debugging</td>
+      <td>Use mature Xtend/Java debugging techniques</td>
+    </tr>
+    <tr>
+      <td>Not adapted to the web</td>
+      <td>As a Maven dependency, YAMTL can be used in Java web projects (server-side)</td>
+    </tr>
+    <tr>
+      <td>Performance</td>
+      <td>Our experiments [MODELS18, TTC18, FASE19, TTC19] show that performance is a strong point of YAMTL</td>
+    </tr>
+    <tr>
+      <td>ATL when simple transformations, Java when complex transformations</td>
+      <td>YAMTL raises the level of abstraction for complex transformations</td>
+    </tr>
+    <tr>
+      <td>Cost in training staff</td>
+      <td>Use plain Java with the YAMTL dependency</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="trying-yamtl">Trying YAMTL…</h3>
+
+<p>Using a YAMTL transformation is as easy as…</p>
+
+<ol>
+  <li>Importing the <a href="https://yamtl.github.io/">YAMTL dependency</a> in your Java project.</li>
+  <li>Declaring a model transformation. See any of the following examples:
+    <ul>
+      <li>CPS</li>
+      <li>CD2RDBMS</li>
+      <li>TTC18</li>
+      <li>TTC19a</li>
+      <li>TTC19b</li>
+    </ul>
+  </li>
+  <li>Executing the model transformation:</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// INSTANTIATE THE TRANSFORMATION DECLARATION
+val xform = new cd2db
+
+// PREPARE MODELS
+xform.loadInputModels(#{'cd' -&gt; inputModelPath})
+
+// EXECUTE TRAFO 
+xform.execute()
+
+// STORE MODELS
+var String outputModelPath = '''src/main/java/cd2db/targetInitial.xmi'''
+xform.saveOutputModels(#{'db' -&gt; outputModelPath})
+</code></pre></div></div>
+
+<h3 id="want-to-know-more">Want to know more?</h3>
+
+<p>If you want to know more about YAMTL, check the following resources:</p>
+
 <ul>
-  <li>Automated Management of Domain-Driven Design in Microservice Architectures</li>
-  <li>Incremental Syncing Policies in Data-driven Cloud Software Applications</li>
-  <li>Helping Patients with Chronic Conditions using AI</li>
+  <li><a href="https://arturboronat.info/yamtl">Information about YAMTL</a></li>
+  <li><a href="https://yamtl.github.io">YAMTL tool web page</a></li>
+  <li>Feel free to <a href="mailto:artur.boronat@gmail.com">contact me</a> if you need help in applying the tool.</li>
 </ul>
-
-<p>If you are interested in doing a PhD in the intersection between model-driven engineering and AI/microservices/cloud technology, <a href="mailto:artur.boronat@le.ac.uk">contact me</a>.</p>
-
-
-      </div>
-    </div>
-    
-    <div class="container-fluid box">
-<!--
-      <img class="center" src="/assets/images/under-construction.gif"/>
-  -->    
-      
-        <a href=/yamtl/><img class="box-image" width="150" height="125" align="left" src="/assets/images/yamtl-icon.png" alt="post picture" /></a>
-      
-    
-      <h4 class="box-title">
-        <a href=/yamtl/>YAMTL: expressive and efficient model transformation <label class="glyphicon glyphicon-new-window"/></a>
-      </h4>
-      <div class="box-text">
-        <p>YAMTL is an EMF-based model-to-model transformation engine whose transformations are defined with an internal DSL of Xtend. <br /></p>
-
-<p>Some of its advantages are:</p>
-
-<p>👍 as <strong>expressive</strong> as state-of-the-art model transformation languages, such as ATL<br />
-👍 powerful model <strong>pattern matching</strong><br />
-👍 <strong>reuse</strong> via inheritance and module composition<br />
-👍 compiled to Java: <strong>one of the fastest transformation engines</strong><br /> 
-👍 full <strong>interoperability</strong> from/to Java<br />
-👍 <strong>incremental execution</strong><br />
-👍 <strong>Xtend tool ecosystem</strong>: templates, IDE, debugger</p>
-
-<p>Check the slides used at MODELS’18:</p>
-
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/LE3TmF9p7bs5p7" width="595" height="335" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen=""> </iframe>
-<div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/aboronat/expressive-and-efficient-model-transformation-with-an-internal-dsl-of-xtend" title="Expressive and Efficient Model Transformation with an Internal DSL of Xtend" target="_blank">Expressive and Efficient Model Transformation with an Internal DSL of Xtend</a> </strong> from <strong><a href="https://www.slideshare.net/aboronat" target="_blank">Artur Boronat</a></strong> </div>
-
-
-      </div>
-    </div>
-    
-</section>
 
 
     <!-- <footer class="footer">My footer</footer> -->
