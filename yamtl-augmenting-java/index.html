@@ -133,9 +133,11 @@
 
 <p><img src="articles/yamtl-java.png" /></p>
 
-<p>Model transformation is traditionally used to translate models between different modeling languages and it can also be used to manipulate data that is modeled using an object-oriented notation, such as UML. This defining characteristic makes it an ideal candidate for developing <a href="https://modeling-languages.com/big-five-bet-modeling-low-code/">low-code application platforms</a> by, for example, automating both translation tasks and <a href="https://modeling-languages.com/category/topic/reverse/">reverse engineering tasks</a>.</p>
+<p><a href="https://arturboronat.info/yamtl">YAMTL</a> is a model transformation language that provides a fresh approach to model transformation by favouring interoperability, reuse, expressivity and efficiency.</p>
 
-<p><a href="https://arturboronat.info/yamtl">YAMTL</a> is a model transformation (MT) language that is defined as an internal domain-specific language of <a href="https://www.eclipse.org/xtend/">Xtend</a> and, thereby, reuses advanced IDE support and out-of-the-box interoperability with Java, including Android. Its transformation engine is one of the fastest thanks to working with compiled transformations.</p>
+<p><strong>Model transformation</strong> is traditionally used to translate models between different modeling languages and it can also be used to manipulate data that is modeled using an object-oriented notation, such as UML. This defining characteristic makes it an ideal candidate for developing <a href="https://modeling-languages.com/big-five-bet-modeling-low-code/">low-code application platforms</a> by, for example, automating both translation tasks and <a href="https://modeling-languages.com/category/topic/reverse/">reverse engineering tasks</a>.</p>
+
+<p><a href="https://arturboronat.info/yamtl">YAMTL</a> approaches model transformation (MT) language by means of an internal domain-specific language of <a href="https://www.eclipse.org/xtend/">Xtend</a> and, thereby, reuses advanced IDE support and out-of-the-box interoperability with Java, including Android. Its transformation engine is one of the fastest thanks to working with compiled transformations.</p>
 
 <p><strong>YAMTL is a model transformation language fully interoperable with Java, expressive and very fast - arturboronat.info/yamtl</strong></p>
 
@@ -191,11 +193,11 @@ full interoperability from/to Java; additional facilities inherited from Xtend (
   <li>Importing the <a href="https://yamtl.github.io/">YAMTL dependency</a> in your Java project.</li>
   <li>Declaring a model transformation. See any of the following examples:
     <ul>
-      <li>CPS</li>
-      <li>CD2RDBMS</li>
-      <li>TTC18</li>
-      <li>TTC19a</li>
-      <li>TTC19b</li>
+      <li><a href="https://github.com/yamtl/examples/blob/master/yamtl.examples.mapping.batch.cps2dep/src/main/java/cps2dep/Cps2DepYAMTL.xtend">Instantiating behavioural models into deployment models</a> from the <a href="https://github.com/viatra/viatra-cps-benchmark">VIATRA CPS Benchmark</a> used in the <a href="https://arturboronat.info/assets/pubs/2018-boronat-models.pdf">MODELS’18 paper</a> and in the <a href="https://arturboronat.info/assets/pubs/2019-boronat-fase.pdf">FASE’19 paper</a></li>
+      <li><a href="https://github.com/yamtl/examples/blob/master/yamtl.examples.mapping.batch.cd2db/src/main/java/cd2db/cd2db.xtend">Transforming class diagrams to relational schemas</a> from the <a href="https://arturboronat.info/assets/pubs/2019-boronat-fase.pdf">FASE’19 paper</a></li>
+      <li>Querying social networks (<a href="https://github.com/arturboronat/ttc2018liveContest/blob/master/solutions/EMFSolutionYAMTL_batch/src/main/java/yamtl/Q1_yamtl.xtend">Query 1</a> and <a href="https://github.com/arturboronat/ttc2018liveContest/blob/master/solutions/EMFSolutionYAMTL_batch/src/main/java/yamtl/Q2_yamtl.xtend">Query 2</a>) from the <a href="https://arturboronat.info/assets/pubs/2018-boronat-ttc.pdf">TTC’18 paper</a></li>
+      <li><a href="https://github.com/arturboronat/ttc2019-tt2bdd/blob/master/solutions/EMFSolutionYAMTL/src/main/java/ttc19/YAMTLSolution.xtend">Transforming truth tables to BDDs</a> from the <a href="https://arturboronat.info/assets/pubs/2019-boronat-ttc-tt2bdd.pdf">TTC’19 (tt2bdd) paper</a></li>
+      <li><a href="https://github.com/arturboronat/ttc2019-live/blob/master/solutions/ttc2019.live.EMFSolutionYAMTL/src/main/java/ttc19/YAMTLSolution.xtend">Verifying consistency relations</a> from the <a href="https://arturboronat.info/assets/pubs/2019-boronat-ttc-bib2doc.pdf">TTC’19 (bib2doc) paper</a></li>
     </ul>
   </li>
   <li>Executing the model transformation:</li>
@@ -223,7 +225,35 @@ xform.saveOutputModels(#{'db' -&gt; outputModelPath})
   <li><a href="https://arturboronat.info/yamtl">Information about YAMTL</a></li>
   <li><a href="https://yamtl.github.io">YAMTL tool web page</a></li>
   <li>Feel free to <a href="mailto:artur.boronat@gmail.com">contact me</a> if you need help in applying the tool.</li>
+  <li>Papers analysing the performance of YAMTL:
+    <ul>
+      <li><a href="https://arturboronat.info/assets/pubs/2018-boronat-models.pdf">Artur Boronat. Expressive and Efficient Model Transformation with an Internal DSL of Xtend. MODELS’18.</a></li>
+      <li><a href="https://arturboronat.info/assets/pubs/2019-boronat-fase.pdf">Artur Boronat. Offline Delta-driven Model Transformation with Dependency Injection. FASE’19.</a></li>
+      <li>Solutions to cases of the tool transformation contest: <a href="https://arturboronat.info/assets/pubs/2018-boronat-ttc.pdf">TTC’18 paper</a>, <a href="https://arturboronat.info/assets/pubs/2019-boronat-ttc-tt2bdd.pdf">TTC’19 (tt2bdd) paper</a>, <a href="https://arturboronat.info/assets/pubs/2019-boronat-ttc-bib2doc.pdf">TTC’19 (bib2doc) paper</a></li>
+    </ul>
+  </li>
 </ul>
+
+<hr />
+
+<p>Hola Jordi,</p>
+
+<p>Bon any nou (i dècada)!</p>
+
+<p>Abans de que es complís un any de la invitació inicial, he escrit una breu introducció a YAMTL: https://modeling-languages.com/?p=7339&amp;preview=true</p>
+
+<p>Disculpa el retràs.</p>
+
+<p>He escrit un draft però m’agradaria retocar la imatge. He emprat el tamany recomanat 850x500 (https://modeling-languages.com/write-for-us-netiquette-rules/) però no apareix bé.</p>
+
+<p>També m’agradaria embeure la <a href="https://www.slideshare.net/aboronat/expressive-and-efficient-model-transformation-with-an-internal-dsl-of-xtend">presentació de MODELS18</a> però no ho he aconseguit, el WordPress Shortcode no funciona i per alguna raó el iframe és borrat per l’editor. Saps com incloure-la?</p>
+
+<p>D’altra banda, estem organitzant el tool transformation contest per a enguany i ens agradaria oferir-te l’oportunitat de continuar el debat que obrires l’any passat sobre el <strong>futur transformacions de models</strong> a STAF. La idea seria explorar amb més detall com de llunyà queda que IA automatitze la definició de transformacions de models emprant eines concretes. Una manera de fer-ho seria proposant un cas d’estudi basat en exemples de transformacions en un domini d’aplicació concret de manera que gent treballant en llenguatges de transformació puguen definir-les. La idea seria discutir la tensió entre expressivitat i automatització, incloguent productivitat per a l’usuari de les eines. Trobes aquesta idea interessant? Saps algún domini d’aplicació concret on IA puga tindre un avantatge? Nosaltres podem donar una maneta en preparar el cas d’estudi. Si estàs interessat, podràs trobar més informació sobre el que es demana normalment en https://www.transformation-tool-contest.eu/cfc.html</p>
+
+<p>Si et sembla bé t’enviaré una altre correu en anglés i copiaré als altres organitzadors de TTC.</p>
+
+<p>Salutacions,<br />
+Artur</p>
 
 
     <!-- <footer class="footer">My footer</footer> -->
