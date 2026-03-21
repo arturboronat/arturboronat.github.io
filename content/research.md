@@ -27,13 +27,13 @@ title: "Research"
 Funder: European Space Agency (ESA) · Role: Informatics lead · 2021–2023 · Award: £2M (whole project)
 
 P-STEP is an eHealth service platform to deliver and monitor personalised exercise advice to patients living with long term health conditions. The platform provides warnings and guidance based on environmental conditions and location (from GNSS and EO sources) to modify recommended exercises and reduce risk. Through AI and optimally designed user interfaces, it promotes adherence to advice. The platform targets long-term respiratory and cardiac conditions, identified as clinical priorities in the NHS 10-year plan.
-[Project page](https://le.ac.uk/news/2019/april/29-space-technology)
+[Project page](https://pstep.co.uk/)
 
 **P-STEP CCN1: iOS & Wearables Extension**
 Funder: European Space Agency (ESA) · Role: Informatics lead (WP3000) · Nov 2024–Oct 2025 · Award: EUR 467,528 (ESA contribution; total project cost EUR 935,054)
 
 Contract Change Notice 1 extends the P-STEP platform to iOS via Kotlin Multiplatform (KMP) and adds wearables integration (Terra API) for Apple Watch, Fitbit, Garmin, and Google Fit. The extension addresses a commercialisation barrier identified during pilot activities: 39% of prospective participants were excluded due to iOS-only access. Backend hardening, security, and data aggregation updates are also in scope.
-[Project page](https://le.ac.uk/news/2019/april/29-space-technology)
+[Project page](https://pstep.co.uk/)
 
 **An AI-powered DSML for Data Discovery for Rare Diseases**
 Funder: EPSRC network MDE-Net · Role: PI · Jun–Dec 2022 · Award: £4,950
