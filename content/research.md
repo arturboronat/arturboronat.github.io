@@ -8,7 +8,7 @@ title: "Research"
 [yamtl.github.io](https://arturboronat.github.io/yamtl)
 
 **EMF-Syncer** — Facilitates the adoption of Model-Driven Engineering techniques and EMF-supported tooling in JVM programs.
-<!-- [arturboronat.github.io/emf-syncer](https://arturboronat.github.io/emf-syncer) -->
+[https://emf-syncer.github.io/](https://emf-syncer.github.io/)
 
 **MDE-subtyping** — A tool that infers whether two metamodel specifications (EMF metamodel + OCL constraints) are compatible, enabling safe reuse of model management operations.
 [mde-subtyping.github.io/web](https://mde-subtyping.github.io/web/)
