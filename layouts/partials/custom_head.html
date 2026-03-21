@@ -1,0 +1,39 @@
+<style>
+/* Explicit light/dark overrides — higher specificity than :root in @media */
+html[data-theme="light"] {
+  --bg-color-primary: #fdfdfd;
+  --bg-color-secondary: #f2f4f7;
+  --text-color-primary: #1a1a1a;
+  --text-color-secondary: #444;
+  --text-color-tertiary: #8c8c8c;
+  --link-color: #0066cc;
+  --link-visited-color: #551a8b;
+  --border-color: #d0d7de;
+}
+html[data-theme="dark"] {
+  --bg-color-primary: #121212;
+  --bg-color-secondary: #1c1f24;
+  --text-color-primary: #e5e5e5;
+  --text-color-secondary: #b3b3b7;
+  --text-color-tertiary: #a0a0a0;
+  --link-color: #6da6ff;
+  --link-visited-color: #b388ff;
+  --border-color: #30363d;
+}
+#theme-toggle {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1.1em;
+  padding: 0 0.3em;
+  vertical-align: middle;
+  color: var(--text-color-primary);
+}
+</style>
+<script>
+  (function() {
+    var saved = localStorage.getItem('theme');
+    var preferred = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', preferred);
+  })();
+</script>

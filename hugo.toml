@@ -1,0 +1,43 @@
+baseURL = "https://arturboronat.github.io/"
+title = "Artur Boronat"
+theme = "hugo-bearneo"
+languageCode = "en-GB"
+
+[params]
+  favicon = ""
+  description = "Associate Professor at the School of Computing and Mathematical Sciences, University of Leicester, UK."
+  avatar = "artur2022.jpg"
+  avatarWidth = "100px"
+  postSearch = false
+  groupByYear = false
+  toc = false
+  imageZoom = false
+  upvote = false
+
+[params.author]
+  name = "Artur Boronat"
+
+[[menu.main]]
+name = "Publications"
+url = "/publications/"
+weight = 1
+
+[[menu.main]]
+name = "Research"
+url = "/research/"
+weight = 2
+
+[[menu.main]]
+name = "Teaching"
+url = "/teaching/"
+weight = 3
+
+[[menu.main]]
+name = "Talks"
+url = "/talks/"
+weight = 4
+
+[[menu.main]]
+name = "Service"
+url = "/service/"
+weight = 5

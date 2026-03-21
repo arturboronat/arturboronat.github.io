@@ -1,0 +1,18 @@
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var btn = document.getElementById('theme-toggle');
+    if (!btn) return;
+    function updateBtn(theme) {
+      btn.textContent = theme === 'dark' ? '\u2600' : '\u263e';
+      btn.title = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
+    }
+    updateBtn(document.documentElement.getAttribute('data-theme'));
+    btn.addEventListener('click', function() {
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      updateBtn(next);
+    });
+  });
+</script>
