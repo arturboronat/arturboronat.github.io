@@ -7,7 +7,7 @@ title: "Talks"
 - **Composing Clinical Activity Guidance for Multimorbidity via Bounded Relational Analysis** (Mar 2026)
   [LLHRG](https://www.leicesterlifestyleresearch.org.uk/) Showcasing and Networking Event, Leicester Tigers Rugby Club, Leicester, UK.
 
-- **P-STEP: Personalised Space Technology Exercise Platform** (2025)
+- **P-STEP: Personalised Space Technology Exercise Platform** (Sep 2025)
   MedTech @ Leicester 2025, together with James Donaldson (Department of Cardiovascular Sciences), University of Leicester, Leicester, UK.
 
 - **Models in Motion: Agile MDE for Continuous Adaptation** (Jun 2025)
