@@ -5,6 +5,7 @@ title: "Service"
 ## 2026
 
 - [ACM/IEEE International Conference on Model Driven Engineering Languages and Systems (MODELS 2026)](https://conf.researchr.org/home/models-2026) — PC member.
+- [MoDELS 2026 (Artifact Evaluation Committee)](https://conf.researchr.org/track/models-2026/models-2026-artifact-evaluation) — Programme Committee. Model Driven Engineering Languages and Systems · Málaga, Spain · 4-9 October 2026
 - [4th International Workshop on Agile Model-Driven Engineering (Agile MDE 2026)](https://conf.researchr.org/series/a-mde) — PC member. Part of STAF 2026 · Rennes, France
 - [22nd European Conference on Modelling Foundations and Applications (ECMFA 2026)](https://conf.researchr.org/track/ecmfa-2026/) — PC member. Part of STAF 2026 · Rennes, France
 - **iFS Steering Committee** — Steering committee member. Joint steering committee for the integrated Formal methods and Software Engineering community, elected by the FASE Steering Committee (vote February 2026).
