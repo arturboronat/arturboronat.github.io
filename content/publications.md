@@ -8,7 +8,8 @@ Selected publications. [DBLP](https://dblp.org/pid/52/2602.html) · [Google Scho
 
 ## 2026
 
-- **Boronat, A.** (2026). *Composing Clinical Activity Guidance for Multimorbidity via Bounded Relational Analysis*. Proceedings of the 29th International Conference on Fundamental Approaches to Software Engineering (FASE 2026), LNCS. Springer. To appear.
+- **Boronat, A.** (2026). *Composing Clinical Activity Guidance for Multimorbidity via Bounded Relational Analysis*. Proceedings of the 29th International Conference on Fundamental Approaches to Software Engineering (FASE 2026), LNCS 16504. Springer.
+  [[DOI]](https://doi.org/10.1007/978-3-032-22774-4_18)
 
 - **Boronat, A.** (2026). *Bounded Structural Model Finding with Symbolic Data Constraints*. Proceedings of the 15th International Workshop on Rewriting Logic and its Applications (WRLA 2026), LNCS. Springer. To appear.
 
